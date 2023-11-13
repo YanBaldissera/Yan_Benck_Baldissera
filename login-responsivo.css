@@ -1,0 +1,18 @@
+@media screen and (min-width:650px) {
+    .container {
+        margin-top: 10px;
+    }
+
+    #campo__titulo {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .campo__caixaTexto {
+        height: 150px;
+    }
+
+    .campo__recuperar{
+        margin-bottom: 20px;
+    }
+}

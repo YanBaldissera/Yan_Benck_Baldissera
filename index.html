@@ -1,0 +1,80 @@
+<!-- Para a página de login(index.html) foi criada uma variável login que armazena o e-mail de autenticação e uma variável 'senha' que armazena a senha de autenticação.
+Após isso foi feito um código que obtém o elemento HTML com o ID "btnentrar" e adiciona um addEventListener para o evento de clique. Quando o botão "Entrar" é clicado, a função logar será chamada.
+Dentro da função logar foram realizadas verificações:
+Primeiro nós vamos obter o valor escrito pelo usuário tanto no e-mail quanto na senha utilizando um document.querySelector("campo__email e campo__senha").value e armazenamos em uma variável.
+segundo temos um document.getElementById("campo__email e campo__senha") para obter o elemtno HTML do campo e colocamos em um variável.
+Verificamos se o campo de e-mail e senha estão vazios ou incorretos. Se estiver vazio ou incorreto, ele adiciona uma classe CSS chamada "campo__caixaTextoError" ao campo de e-mail ou senha para destacar visualmente o erro e exibir um alerta informando que o e-mail ou senha está errado.
+Temos também a função mostrarSenha que é chamada para alternar a visibilidade da senha no campo de senha.
+
+Para a página de registro(registro.html) primeiro, foi feito um objeto chamado "registro" que contém informações sobre os campos do formulário. Cada campo do formulário é representado como uma chave no objeto "registro".
+Em seguida, foi criada uma variável chamada "formHTML" e inicializa com a tag de abertura de um formulário HTML (<form>).
+Foi iniciado um loop for...in para iterar por todas as chaves (nomes de campos) no objeto "registro". O loop percorre todas as propriedades do objeto.
+Para cada campo no objeto "registro", é obtido o objeto correspondente a esse campo.
+Foi construido a parte HTML do formulário para o campo atual, que inclui um (<label>) associado ao campo, um ícone (usando classes do Font Awesome), um tipo de entrada (como texto, data, e-mail, senha, etc.).
+O código gerado para o campo atual (rótulo e entrada) é adicionado à variável "formHTML".
+Após o loop for...in, é fechada a tag do formulário (</form>), adicionando-a à variável "formHTML".
+é definido o conteúdo HTML do elemento com o ID "formularioRegistro" usando registros.innerHTML = formHTML. Isso substitui o conteúdo anterior desse elemento pelo código HTML gerado dinamicamente, criando o formulário completo.
+
+subir o servidor entrar na pasta pelo cmd  ai usar o comando 
+python -m http.server
+http://localhost:8000
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login-responsivo.css">
+    <title>UpTravels</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="campos">
+            <div class="campo__titulos">
+                <p id="campo__titulo">Acesse com sua conta
+                    <span style="color: rgba(18, 18, 242);">G</span><span
+                        style="color: rgba(247, 0, 255);">o</span><span style="color: rgba(255, 170, 0);">o</span><span
+                        style="color: rgba(4, 4, 126);">g</span><span style="color: rgba(89, 89, 96);">l</span><span
+                        style="color: rgba(255, 0, 30);">e</span>
+                    !
+                </p>
+            </div>
+
+            <div class="campo__caixaTexto">
+                <input type="email" name="" id="campo__email" class="campo__email" placeholder="E-mail ou número de celular">
+                <input type="password" name="" id="campo__senha" class="campo__senha" placeholder="Senha">
+            </div>
+
+            <div class="campo__lembrar">
+                <input type="checkbox" name="" id="campo__lembrar">
+                <label for="campo__lembrar">Lembrar sempre do meu acesso</label>
+
+                <input type="checkbox" name="" id="campo__mostrarSenha" onclick="mostrarSenha()">
+                <label for="campo__mostrarSenha">Mostrar Senha</label>
+            </div>
+            
+            <div class="campo__botao">
+                <button id="btnentrar">ENTRAR</button>
+            </div>
+            
+
+            <div class="campo__recuperar">
+                <a href="recuperarConta.html">Esqueci minha senha</a>
+            </div>
+
+            <div class="campo__criar">
+                <a href="registro.html">Não tem conta? <span class="blue-font">Criar agora</span></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

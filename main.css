@@ -1,0 +1,41 @@
+.paises, .hospedagens {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+    grid-template-rows: 300px;
+    gap: 20px;
+    align-items: top;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+span {
+    height: 240px;
+    background-color: #1a3ffb;
+    width: 100%; 
+    display: none;
+    text-align: start;
+}
+
+img:hover {
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.paises img:hover + span, .hospedagens img:hover + span {
+    width: 100%; 
+    max-width: 270px; 
+    height: 30px;
+    text-align: start;
+    background-color:#1a3ffb;
+    color: white;
+    display: block;
+    margin-bottom: 30px; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}

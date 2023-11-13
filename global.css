@@ -1,0 +1,78 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, #c2ecfd, #6c9dff);
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #1a3ffb, #6578f6);
+    overflow-x: auto; 
+}
+.cabecalho__menu {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px
+}
+
+.cabecalho__menuEsquerda {
+    align-items: left;
+}
+
+.cabecalho__menuDireita {
+    align-items: right;
+}
+
+.cabecalho__menu:hover {
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #069edb, #1a3ffb);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #1a3ffb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+a:link{
+    color: #000000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        height: auto;
+        flex-direction: column; 
+    }
+    
+    .cabecalho__menu {
+        margin: 10px 0; 
+    }
+}
+

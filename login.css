@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    
+    background-image: url('img/backgroud2.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 650px;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5%;
+
+    box-shadow: 10px 8px 25px 5px rgba(64,61,61,0.67);
+    -webkit-box-shadow: 10px 8px 25px 5px rgba(64,61,61,0.67);
+    -moz-box-shadow: 10px 8px 25px 5px rgba(64,61,61,0.67);
+}
+
+.campos {
+    margin: 5% 10%;
+}
+
+.blue-font {
+    color: blue;
+}
+
+.campo__titulos {
+    display: flex;
+    justify-content: center;
+}
+
+#campo__titulo {
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(58, 58, 58);
+
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+
+.campo__caixaTexto {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.campo__email, .campo__senha {
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.campo__caixaTextoError {
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.campo__lembrar {
+    margin-bottom: 20px;
+}
+
+#campo__mostrarSenha {
+    margin-left: 120px;
+}
+
+#btnentrar {
+    width: 100%;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.campo__recuperar a, .campo__criar a {
+    text-decoration: none;
+    color: rgba(44, 44, 44);
+}
+
+.campo__recuperar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20%;
+}
+
+.campo__criar {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}

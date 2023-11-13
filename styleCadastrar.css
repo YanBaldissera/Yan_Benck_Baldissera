@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background1.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+label, input, h1 {
+    display: inline-block;
+    margin: 0px 10px;
+    margin-bottom: 5px;
+}
+label {
+    width: calc(40% - 20px);
+    font-weight: bold;
+}
+
+input {
+    width: calc(50% - 40px);
+    padding: 2px;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+
+.registrar{
+    margin-top: 10px;
+    background-color: #027afa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    margin-left: 0;
+}
+
+a{
+    font-size: small;
+}
+
+.botoes{
+    text-align: center;
+}
+
+.logar:hover {
+    background-color: #0056b3;
+}
+
+.registrar:hover{
+    background-color: #0056b3;
+}
+
+.fa-regular {
+    width: 20px;
+    font-size: 15px;
+}
+
+@media(max-width: 530px) {
+    label {
+        width: calc(100% - 80px);
+        font-size: 14px;
+    }
+    input {
+        width: calc(100% - 60px);
+    }
+
+}
